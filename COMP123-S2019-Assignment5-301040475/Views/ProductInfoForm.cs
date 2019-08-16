@@ -35,7 +35,7 @@ namespace COMP123_S2019_Assignment5_301040475.Views
         {
             ProductIDTextLabel.Text = Program.product.productID.ToString();
             ConditionTextLabel.Text = Program.product.condition;
-            CostTextLabel.Text = Program.product.cost.ToString();
+            CostTextLabel.Text = Program.product.cost.Value.ToString("C2");
             PlatformTextLabel.Text = Program.product.platform;
             OSTextLabel.Text = Program.product.OS;
             ManufacturerTextLabel.Text = Program.product.manufacturer;
@@ -162,7 +162,7 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             {
                 // open file stream to write
                 using (StreamWriter outputStream = new StreamWriter(
-                    File.Open(ProductInfoOpenFileDialog.FileName, FileMode.Open)))
+                    File.Open(ProductInfoOpenFileDialog.FileName, FileMode.Create)))
                 {
                     // write stuff to the file
                     outputStream.WriteLine(Program.product.productID.ToString());
@@ -202,8 +202,10 @@ namespace COMP123_S2019_Assignment5_301040475.Views
                     outputStream.Close();
                     outputStream.Dispose();
                 }
+
+                MessageBox.Show("File Saved Successfully!", "Saving...",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
     }
 }

@@ -143,5 +143,10 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\companyLogo.png" />
+    <Content Include="Images\computer.jpg" />
+    <Content Include="Images\splashPic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

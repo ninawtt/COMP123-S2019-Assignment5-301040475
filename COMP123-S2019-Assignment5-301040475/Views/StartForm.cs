@@ -27,6 +27,8 @@ namespace COMP123_S2019_Assignment5_301040475.Views
         {
             Program.productInfoForm.Show();
             this.Hide();
+
+
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
