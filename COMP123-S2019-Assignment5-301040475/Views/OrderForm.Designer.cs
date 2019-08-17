@@ -86,11 +86,16 @@
             this.PriceLabel = new System.Windows.Forms.Label();
             this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.OrderPictureBox = new System.Windows.Forms.PictureBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.OrderFormMenuStrip.SuspendLayout();
             this.SystemComponentsGroupBox.SuspendLayout();
             this.TechSpecsPanel.SuspendLayout();
             this.PriceGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // OrderFormMenuStrip
@@ -113,7 +118,7 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(65, 35);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(65, 38);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // printToolStripMenuItem
@@ -143,7 +148,7 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(71, 35);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(241, 38);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // backToolStripMenuItem
@@ -160,7 +165,7 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(81, 35);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(81, 38);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // toolStripSeparator5
@@ -194,7 +199,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(462, 470);
+            this.CancelButton.Location = new System.Drawing.Point(463, 478);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(134, 49);
             this.CancelButton.TabIndex = 2;
@@ -204,7 +209,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(12, 470);
+            this.BackButton.Location = new System.Drawing.Point(13, 478);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(134, 49);
             this.BackButton.TabIndex = 3;
@@ -214,7 +219,7 @@
             // 
             // FinishButton
             // 
-            this.FinishButton.Location = new System.Drawing.Point(628, 470);
+            this.FinishButton.Location = new System.Drawing.Point(629, 478);
             this.FinishButton.Name = "FinishButton";
             this.FinishButton.Size = new System.Drawing.Size(134, 49);
             this.FinishButton.TabIndex = 4;
@@ -246,7 +251,7 @@
             this.SystemComponentsGroupBox.Controls.Add(this.shapeContainer2);
             this.SystemComponentsGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SystemComponentsGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SystemComponentsGroupBox.Location = new System.Drawing.Point(5, 43);
+            this.SystemComponentsGroupBox.Location = new System.Drawing.Point(6, 51);
             this.SystemComponentsGroupBox.Name = "SystemComponentsGroupBox";
             this.SystemComponentsGroupBox.Size = new System.Drawing.Size(414, 421);
             this.SystemComponentsGroupBox.TabIndex = 5;
@@ -618,7 +623,7 @@
             this.PriceGroupBox.Controls.Add(this.TaxLabel);
             this.PriceGroupBox.Controls.Add(this.PriceLabel);
             this.PriceGroupBox.Controls.Add(this.shapeContainer3);
-            this.PriceGroupBox.Location = new System.Drawing.Point(425, 248);
+            this.PriceGroupBox.Location = new System.Drawing.Point(426, 256);
             this.PriceGroupBox.Name = "PriceGroupBox";
             this.PriceGroupBox.Size = new System.Drawing.Size(343, 213);
             this.PriceGroupBox.TabIndex = 6;
@@ -709,12 +714,52 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OrderPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OrderPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("OrderPictureBox.Image")));
-            this.OrderPictureBox.Location = new System.Drawing.Point(462, 54);
+            this.OrderPictureBox.Location = new System.Drawing.Point(463, 62);
             this.OrderPictureBox.Name = "OrderPictureBox";
             this.OrderPictureBox.Size = new System.Drawing.Size(283, 188);
             this.OrderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.OrderPictureBox.TabIndex = 7;
             this.OrderPictureBox.TabStop = false;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.GripMargin = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.printToolStripButton,
+            this.toolStripSeparator,
+            this.helpToolStripButton});
+            this.toolStrip1.Location = new System.Drawing.Point(10, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(62, 27);
+            this.toolStrip1.TabIndex = 32;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // printToolStripButton
+            // 
+            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
+            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripButton.Name = "printToolStripButton";
+            this.printToolStripButton.Size = new System.Drawing.Size(24, 35);
+            this.printToolStripButton.Text = "&Print";
+            this.printToolStripButton.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
+            // helpToolStripButton
+            // 
+            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
+            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.helpToolStripButton.Name = "helpToolStripButton";
+            this.helpToolStripButton.Size = new System.Drawing.Size(24, 35);
+            this.helpToolStripButton.Text = "He&lp";
+            this.helpToolStripButton.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 38);
             // 
             // OrderForm
             // 
@@ -722,6 +767,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 531);
             this.ControlBox = false;
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.OrderPictureBox);
             this.Controls.Add(this.PriceGroupBox);
             this.Controls.Add(this.SystemComponentsGroupBox);
@@ -745,6 +791,8 @@
             this.PriceGroupBox.ResumeLayout(false);
             this.PriceGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -808,5 +856,9 @@
         private System.Windows.Forms.Label MemoryDataLabel;
         private System.Windows.Forms.Label LCDSizeDataLabel;
         private System.Windows.Forms.PictureBox OrderPictureBox;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton printToolStripButton;
+        private System.Windows.Forms.ToolStripButton helpToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
     }
 }

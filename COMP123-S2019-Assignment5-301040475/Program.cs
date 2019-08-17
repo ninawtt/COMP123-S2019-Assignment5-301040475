@@ -18,8 +18,8 @@ using System.Windows.Forms;
 // *
 // * Date             Author Ref         Revision(Date in YYYYMMDD format)
 // * 20190801         Tzu-Ting Wu        1  Created the initial UI      
-// * 
-// * 
+// * 20190815         Tzu-Ting Wu        2  Finish startForm, selectForm and productInfoForm functionalities
+// * 20190816         Tzu-Ting Wu        3  Finish orderForm and fix startForm's functionalities
 // * 
 // * 
 // * 

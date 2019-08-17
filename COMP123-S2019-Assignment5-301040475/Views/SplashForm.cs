@@ -17,11 +17,21 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This is the event handler for the SplashForm Load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashForm_Load(object sender, EventArgs e)
         {
             SplashTimer.Enabled = true;
         }
 
+        /// <summary>
+        /// This is the event handler for the SplashTimer Tick event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
             Program.startForm.Show();

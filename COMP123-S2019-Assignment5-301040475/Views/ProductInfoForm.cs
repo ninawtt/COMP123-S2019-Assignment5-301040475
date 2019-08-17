@@ -31,6 +31,7 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             }
         }
 
+        // This is the method for filling Product Info
         public void ProductInfoFilled()
         {
             ProductIDTextLabel.Text = Program.product.productID.ToString();
@@ -90,6 +91,12 @@ namespace COMP123_S2019_Assignment5_301040475.Views
         /// <param name="e"></param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            openSavedFile();
+        }
+
+        // This is the method for opening saved file
+        public void openSavedFile()
+        {
             // configuration for openFileDialog
             ProductInfoOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
             ProductInfoOpenFileDialog.FileName = "Product.txt";
@@ -134,17 +141,18 @@ namespace COMP123_S2019_Assignment5_301040475.Views
                     Program.product.moust_type = inputStream.ReadLine();
                     Program.product.power = inputStream.ReadLine();
                     Program.product.webcam = inputStream.ReadLine();
-                    
+
 
                     // cleanup
                     inputStream.Close();
                     inputStream.Dispose();
-
+                    ProductInfoFilled();
                     NextButton.Enabled = true;
                 }
             }
-
         }
+
+
         /// <summary>
         /// This is the shared event handler for the saveToolStripMenuItem Click event
         /// </summary>
@@ -162,7 +170,7 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             {
                 // open file stream to write
                 using (StreamWriter outputStream = new StreamWriter(
-                    File.Open(ProductInfoOpenFileDialog.FileName, FileMode.Create)))
+                    File.Open(ProductInfoSaveFileDialog.FileName, FileMode.Create)))
                 {
                     // write stuff to the file
                     outputStream.WriteLine(Program.product.productID.ToString());

@@ -33,6 +33,11 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             return false;
         }
 
+        /// <summary>
+        /// This is the event handler for the SelectForm Load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
             if(!HasLoadedDataSource())
@@ -115,9 +120,17 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             string outputString = Program.product.manufacturer + " " + Program.product.model + " " + Program.product.cost.Value.ToString("C2");
 
             SelectionTextBox.Text = outputString;
-
-            NextButton.Enabled = true;
             
+        }
+
+        /// <summary>
+        /// This is the event handler for the ProductDataGridView Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ProductDataGridView_Click(object sender, EventArgs e)
+        {
+            NextButton.Enabled = true;
         }
     }
 }

@@ -13,17 +13,23 @@ namespace COMP123_S2019_Assignment5_301040475.Views
 {
     public partial class OrderForm : Form
     {
+        // OrderForm's constructor
         public OrderForm()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This is the event handler for the OrderForm Load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderForm_Load(object sender, EventArgs e)
         {
             OrderInfoFilled();
         }
 
-
+        // This is the method for filling Order Info
         public void OrderInfoFilled()
         {
             ConditionTextLabel.Text = Program.product.condition;
@@ -45,22 +51,42 @@ namespace COMP123_S2019_Assignment5_301040475.Views
             TotalTextLabel.Text = (Program.product.cost * 113 / 100).Value.ToString("C2");
         }
 
+        /// <summary>
+        /// This is the shared event handler for the printToolStripMenuItem Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
             ProductPrintForm.Print();
         }
 
+        /// <summary>
+        /// This is the event handler for the exitToolStripMenuItem Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// This is the shared event handler for the aboutToolStripMenuItem Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.aboutForm.ShowDialog();
         }
 
+        /// <summary>
+        /// This is the event handler for the backToolStripMenuItem Click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.productInfoForm.Show();

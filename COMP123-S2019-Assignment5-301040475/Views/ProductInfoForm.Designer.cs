@@ -78,9 +78,13 @@
             this.CostTextLabel = new System.Windows.Forms.Label();
             this.ProductInfoOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ProductInfoSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ProductInfoFormToolStrip = new System.Windows.Forms.ToolStrip();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ProductInfoFormMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
+            this.ProductInfoFormToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mp
@@ -210,7 +214,7 @@
             this.ProductInfoGroupBox.Controls.Add(this.OSLabel);
             this.ProductInfoGroupBox.Controls.Add(this.ManufacturerLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
-            this.ProductInfoGroupBox.Location = new System.Drawing.Point(36, 107);
+            this.ProductInfoGroupBox.Location = new System.Drawing.Point(36, 109);
             this.ProductInfoGroupBox.Name = "ProductInfoGroupBox";
             this.ProductInfoGroupBox.Size = new System.Drawing.Size(726, 141);
             this.ProductInfoGroupBox.TabIndex = 6;
@@ -223,7 +227,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ModelTextLabel.BackColor = System.Drawing.Color.White;
-            this.ModelTextLabel.Location = new System.Drawing.Point(421, 87);
+            this.ModelTextLabel.Location = new System.Drawing.Point(451, 87);
             this.ModelTextLabel.Name = "ModelTextLabel";
             this.ModelTextLabel.Size = new System.Drawing.Size(135, 37);
             this.ModelTextLabel.TabIndex = 20;
@@ -235,7 +239,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ManufacturerTextLabel.BackColor = System.Drawing.Color.White;
-            this.ManufacturerTextLabel.Location = new System.Drawing.Point(151, 87);
+            this.ManufacturerTextLabel.Location = new System.Drawing.Point(181, 87);
             this.ManufacturerTextLabel.Name = "ManufacturerTextLabel";
             this.ManufacturerTextLabel.Size = new System.Drawing.Size(135, 37);
             this.ManufacturerTextLabel.TabIndex = 19;
@@ -247,7 +251,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OSTextLabel.BackColor = System.Drawing.Color.White;
-            this.OSTextLabel.Location = new System.Drawing.Point(421, 39);
+            this.OSTextLabel.Location = new System.Drawing.Point(451, 39);
             this.OSTextLabel.Name = "OSTextLabel";
             this.OSTextLabel.Size = new System.Drawing.Size(135, 37);
             this.OSTextLabel.TabIndex = 18;
@@ -259,7 +263,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PlatformTextLabel.BackColor = System.Drawing.Color.White;
-            this.PlatformTextLabel.Location = new System.Drawing.Point(151, 39);
+            this.PlatformTextLabel.Location = new System.Drawing.Point(181, 39);
             this.PlatformTextLabel.Name = "PlatformTextLabel";
             this.PlatformTextLabel.Size = new System.Drawing.Size(135, 37);
             this.PlatformTextLabel.TabIndex = 17;
@@ -268,7 +272,7 @@
             // ModelLabel
             // 
             this.ModelLabel.AutoSize = true;
-            this.ModelLabel.Location = new System.Drawing.Point(359, 95);
+            this.ModelLabel.Location = new System.Drawing.Point(389, 95);
             this.ModelLabel.Name = "ModelLabel";
             this.ModelLabel.Size = new System.Drawing.Size(103, 37);
             this.ModelLabel.TabIndex = 6;
@@ -278,7 +282,7 @@
             // OSLabel
             // 
             this.OSLabel.AutoSize = true;
-            this.OSLabel.Location = new System.Drawing.Point(359, 44);
+            this.OSLabel.Location = new System.Drawing.Point(389, 44);
             this.OSLabel.Name = "OSLabel";
             this.OSLabel.Size = new System.Drawing.Size(63, 37);
             this.OSLabel.TabIndex = 4;
@@ -288,7 +292,7 @@
             // ManufacturerLabel
             // 
             this.ManufacturerLabel.AutoSize = true;
-            this.ManufacturerLabel.Location = new System.Drawing.Point(23, 92);
+            this.ManufacturerLabel.Location = new System.Drawing.Point(53, 92);
             this.ManufacturerLabel.Name = "ManufacturerLabel";
             this.ManufacturerLabel.Size = new System.Drawing.Size(206, 37);
             this.ManufacturerLabel.TabIndex = 2;
@@ -298,7 +302,7 @@
             // PlatformLabel
             // 
             this.PlatformLabel.AutoSize = true;
-            this.PlatformLabel.Location = new System.Drawing.Point(23, 44);
+            this.PlatformLabel.Location = new System.Drawing.Point(53, 44);
             this.PlatformLabel.Name = "PlatformLabel";
             this.PlatformLabel.Size = new System.Drawing.Size(137, 37);
             this.PlatformLabel.TabIndex = 0;
@@ -311,7 +315,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductIDLabel.AutoSize = true;
-            this.ProductIDLabel.Location = new System.Drawing.Point(24, 52);
+            this.ProductIDLabel.Location = new System.Drawing.Point(24, 62);
             this.ProductIDLabel.Name = "ProductIDLabel";
             this.ProductIDLabel.Size = new System.Drawing.Size(168, 37);
             this.ProductIDLabel.TabIndex = 7;
@@ -324,7 +328,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ConditionLabel.AutoSize = true;
-            this.ConditionLabel.Location = new System.Drawing.Point(289, 52);
+            this.ConditionLabel.Location = new System.Drawing.Point(289, 62);
             this.ConditionLabel.Name = "ConditionLabel";
             this.ConditionLabel.Size = new System.Drawing.Size(153, 37);
             this.ConditionLabel.TabIndex = 9;
@@ -337,7 +341,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CostLabel.AutoSize = true;
-            this.CostLabel.Location = new System.Drawing.Point(551, 55);
+            this.CostLabel.Location = new System.Drawing.Point(551, 65);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(83, 37);
             this.CostLabel.TabIndex = 11;
@@ -575,7 +579,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductIDTextLabel.BackColor = System.Drawing.Color.White;
-            this.ProductIDTextLabel.Location = new System.Drawing.Point(126, 47);
+            this.ProductIDTextLabel.Location = new System.Drawing.Point(126, 57);
             this.ProductIDTextLabel.Name = "ProductIDTextLabel";
             this.ProductIDTextLabel.Size = new System.Drawing.Size(135, 37);
             this.ProductIDTextLabel.TabIndex = 14;
@@ -587,7 +591,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ConditionTextLabel.BackColor = System.Drawing.Color.White;
-            this.ConditionTextLabel.Location = new System.Drawing.Point(368, 47);
+            this.ConditionTextLabel.Location = new System.Drawing.Point(368, 57);
             this.ConditionTextLabel.Name = "ConditionTextLabel";
             this.ConditionTextLabel.Size = new System.Drawing.Size(135, 37);
             this.ConditionTextLabel.TabIndex = 15;
@@ -599,7 +603,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CostTextLabel.BackColor = System.Drawing.Color.White;
-            this.CostTextLabel.Location = new System.Drawing.Point(597, 47);
+            this.CostTextLabel.Location = new System.Drawing.Point(597, 57);
             this.CostTextLabel.Name = "CostTextLabel";
             this.CostTextLabel.Size = new System.Drawing.Size(135, 37);
             this.CostTextLabel.TabIndex = 16;
@@ -607,7 +611,43 @@
             // 
             // ProductInfoOpenFileDialog
             // 
-            this.ProductInfoOpenFileDialog.FileName = "openFileDialog1";
+            this.ProductInfoOpenFileDialog.FileName = "Default.txt";
+            // 
+            // ProductInfoFormToolStrip
+            // 
+            this.ProductInfoFormToolStrip.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ProductInfoFormToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.ProductInfoFormToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ProductInfoFormToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripButton,
+            this.saveToolStripButton});
+            this.ProductInfoFormToolStrip.Location = new System.Drawing.Point(10, 23);
+            this.ProductInfoFormToolStrip.Name = "ProductInfoFormToolStrip";
+            this.ProductInfoFormToolStrip.Size = new System.Drawing.Size(84, 39);
+            this.ProductInfoFormToolStrip.TabIndex = 17;
+            this.ProductInfoFormToolStrip.Text = "toolStrip1";
+            // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(36, 36);
+            this.openToolStripButton.Text = "&Open";
+            this.openToolStripButton.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(24, 24);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // ProductInfoForm
             // 
@@ -615,6 +655,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 531);
             this.ControlBox = false;
+            this.Controls.Add(this.ProductInfoFormToolStrip);
             this.Controls.Add(this.CostTextLabel);
             this.Controls.Add(this.ConditionTextLabel);
             this.Controls.Add(this.ProductIDTextLabel);
@@ -641,6 +682,8 @@
             this.ProductInfoGroupBox.PerformLayout();
             this.TechSpecsGroupBox.ResumeLayout(false);
             this.TechSpecsGroupBox.PerformLayout();
+            this.ProductInfoFormToolStrip.ResumeLayout(false);
+            this.ProductInfoFormToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -697,5 +740,8 @@
         private System.Windows.Forms.Label MemoryTextLabel;
         private System.Windows.Forms.OpenFileDialog ProductInfoOpenFileDialog;
         private System.Windows.Forms.SaveFileDialog ProductInfoSaveFileDialog;
+        private System.Windows.Forms.ToolStrip ProductInfoFormToolStrip;
+        private System.Windows.Forms.ToolStripButton openToolStripButton;
+        private System.Windows.Forms.ToolStripButton saveToolStripButton;
     }
 }
